@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="veiwmodel"
+            type="com.example.newproject.ShoeVeiw" />
+    </data>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".shoedetail">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/n"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d"
+                android:text="@string/na"
+                android:textColor="#3F51B5"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/nam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/b"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/nam"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textSize="16sp"
+                android:text="@={veiwmodel.newShoeName}"/>
+
+            <TextView
+                android:id="@+id/si"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d"
+                android:layout_marginBottom="@dimen/d"
+                android:text="@string/si"
+                android:textColor="#673AB7"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/siz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/b"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/siza"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                android:text="@={veiwmodel.newShoeSize}"/>
+
+            <TextView
+                android:id="@+id/co"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/d"
+                android:layout_marginBottom="@dimen/d"
+                android:text="@string/com"
+                android:textColor="#673AB7"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/b"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/comp"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                android:text="@={veiwmodel.newCompanyName}"/>
+
+            <TextView
+                android:id="@+id/des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d"
+                android:text="@string/dee"
+                android:textColor="#673AB7"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/big"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/dddde"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColorHint="#757575"
+                android:text="@={veiwmodel.newShoeDescription}"/>
+
+            <Button
+                android:id="@+id/save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/d"
+                android:text="@string/sav"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/can"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

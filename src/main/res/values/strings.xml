@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">finalproject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="e">Email</string>
+    <string name="ee">Enter your email</string>
+    <string name="p">Password</string>
+    <string name="paas">Enter your password</string>
+    <string name="l">login</string>
+    <string name="ll">login for now</string>
+    <string name="we">Wellcome to  our store</string>
+    <string name="wee">welcome to our store</string>
+    <string name="ea">"we are happy to see you "</string>
+    <string name="f">"Happy to visit our app "</string>
+    <string name="bb">Next</string>
+    <string name="inn">instructions</string>
+    <string name="s">"contact us with our phone umbers , to get help "</string>
+    <string name="dddd">contact us  with our phone numbers to get any help</string>
+    <string name="v">our staff will answer all your question using your email</string>
+    <string name="nm">make sure to have the receipt in case u need to exchange or return anyproduct</string>
+    <string name="add">Add shoes</string>
+    <string name="logout">Logout</string>
+    <string name="na">Shoes Name</string>
+    <string name="nam">Enter shoes name</string>
+    <string name="si">Shoe size</string>
+    <string name="siza">Enter shoe size</string>
+    <string name="com">Company Name</string>
+    <string name="comp">Enter shoe company</string>
+    <string name="de" />
+    <string name="dee">Shoe Description</string>
+    <string name="dddde">Enter shoe description</string>
+    <string name="sav">Save</string>
+    <string name="can">Cancel</string>
+    <string name="ShoeList">Shoe_List</string>
+</resources>

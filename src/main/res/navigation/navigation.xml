@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/login">
+
+    <fragment
+        android:id="@+id/login"
+        android:name="com.example.newproject.Login"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login_to_welcome"
+            app:destination="@id/welcome" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.example.newproject.welcome"
+        android:label="welcome" >
+        <action
+            android:id="@+id/action_welcome_to_instruction"
+            app:destination="@id/instruction" />
+    </fragment>
+    <fragment
+        android:id="@+id/instruction"
+        android:name="com.example.newproject.instruction"
+        android:label="instruction" >
+        <action
+            android:id="@+id/action_instruction_to_shoelist"
+            app:destination="@id/shoelist"
+            app:popUpTo="@id/login"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoelist"
+        android:name="com.example.newproject.shoelist"
+        android:label="shoelist" >
+        <action
+            android:id="@+id/action_shoelist_to_shoedetail"
+            app:destination="@id/shoedetail" />
+        <action
+            android:id="@+id/action_shoelist_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoedetail"
+        android:name="com.example.newproject.shoedetail"
+        android:label="shoedetail" >
+        <action
+            android:id="@+id/action_shoedetail_to_shoelist"
+            app:destination="@id/shoelist" />
+    </fragment>
+</navigation>
